@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule  } from '@angular/forms';
 
 import { ButtonsComponent } from './buttons.component';
 import { CardsComponent } from './cards.component';
@@ -22,12 +23,21 @@ import { TabsComponent } from './tabs.component';
 // Components Routing
 import { ComponentsRoutingModule } from './components-routing.module';
 
+//angular-mdl
+import { MdlModule  } from '@angular-mdl/core'
+
+
+
+
 @NgModule({
   imports: [
+    FormsModule,
     ComponentsRoutingModule,
     BsDropdownModule.forRoot(),
     ModalModule.forRoot(),
-    TabsModule
+    TabsModule,
+    MdlModule
+    
   ],
   declarations: [
     ButtonsComponent,

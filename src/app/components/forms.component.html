@@ -1,4 +1,31 @@
 <div class="animated fadeIn">
+
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-header">
+          <strong>angular MDL</strong>
+          <small>Form</small>
+        </div>
+        <div class="card-block">
+
+          <mdl-textfield type="text" label="最大10个字符文本框 Text..." maxlength="10"></mdl-textfield>
+          <mdl-textfield type="text" label="数字文本框 Number..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="请输入数字!" [(ngModel)]="text2"></mdl-textfield>
+          <mdl-textfield type="text" label="浮动标题 Text..." [(ngModel)]="text3" floating-label></mdl-textfield>
+          <mdl-textfield type="text" label="浮动标题 Number..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not a number!" [(ngModel)]="text4" floating-label></mdl-textfield>
+          <mdl-textfield label="多行文本框..." [(ngModel)]="text5" rows="3" maxrows="3" floating-label></mdl-textfield>
+          <div>
+              <mdl-textfield type="text" [(ngModel)]="text6" icon="search"></mdl-textfield>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
   <div class="row">
     <div class="col-sm-6">
       <div class="card">
@@ -14,7 +41,8 @@
                 <input type="text" class="form-control" id="name" placeholder="Enter your name">
               </div>
             </div>
-          </div><!--/.row-->
+          </div>
+          <!--/.row-->
           <div class="row">
             <div class="col-sm-12">
               <div class="form-group">
@@ -22,7 +50,8 @@
                 <input type="text" class="form-control" id="ccnumber" placeholder="0000 0000 0000 0000">
               </div>
             </div>
-          </div><!--/.row-->
+          </div>
+          <!--/.row-->
           <div class="row">
             <div class="form-group col-sm-4">
               <label for="ccmonth">Month</label>
@@ -64,10 +93,12 @@
                 <input type="text" class="form-control" id="cvv" placeholder="123">
               </div>
             </div>
-          </div><!--/.row-->
+          </div>
+          <!--/.row-->
         </div>
       </div>
-    </div><!--/.col-->
+    </div>
+    <!--/.col-->
     <div class="col-sm-6">
       <div class="card">
         <div class="card-header">
@@ -96,15 +127,18 @@
               <label for="postal-code">Postal Code</label>
               <input type="text" class="form-control" id="postal-code" placeholder="Postal Code">
             </div>
-          </div><!--/.row-->
+          </div>
+          <!--/.row-->
           <div class="form-group">
             <label for="country">Country</label>
             <input type="text" class="form-control" id="country" placeholder="Country name">
           </div>
         </div>
       </div>
-    </div><!--/.col-->
-  </div><!--/.row-->
+    </div>
+    <!--/.col-->
+  </div>
+  <!--/.row-->
   <div class="row">
     <div class="col-md-6">
       <div class="card">
@@ -469,8 +503,10 @@
           <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button>
         </div>
       </div>
-    </div><!--/.col-->
-  </div><!--/.row-->
+    </div>
+    <!--/.col-->
+  </div>
+  <!--/.row-->
   <div class="row">
     <div class="col-sm-6">
       <div class="card">
@@ -492,7 +528,8 @@
           </div>
         </div>
       </div>
-    </div><!--/.col-->
+    </div>
+    <!--/.col-->
     <div class="col-sm-6">
       <div class="card">
         <div class="card-header">
@@ -513,7 +550,8 @@
           </div>
         </div>
       </div>
-    </div><!--/.col-->
+    </div>
+    <!--/.col-->
   </div>
   <div class="row">
     <div class="col-sm-4">
@@ -992,6 +1030,8 @@
           </form>
         </div>
       </div>
-    </div> <!--/.col-->
-  </div><!--/.row-->
+    </div>
+    <!--/.col-->
+  </div>
+  <!--/.row-->
 </div>
