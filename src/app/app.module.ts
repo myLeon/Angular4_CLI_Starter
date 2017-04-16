@@ -19,13 +19,17 @@ import { AppRoutingModule } from './app.routing';
 import { FullLayoutComponent } from './layouts/full-layout.component';
 import { SimpleLayoutComponent } from './layouts/simple-layout.component';
 
+//Daterangepicker
+import { DaterangepickerModule } from './daterangepicker/daterangepicker.module';
+
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
-    ChartsModule
+    ChartsModule,
+    DaterangepickerModule
   ],
   declarations: [
     AppComponent,

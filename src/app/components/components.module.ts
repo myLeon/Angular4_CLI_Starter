@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
 import { FormsModule  } from '@angular/forms';
+
+
 
 import { ButtonsComponent } from './buttons.component';
 import { CardsComponent } from './cards.component';
@@ -24,19 +28,33 @@ import { TabsComponent } from './tabs.component';
 import { ComponentsRoutingModule } from './components-routing.module';
 
 //angular-mdl
-import { MdlModule  } from '@angular-mdl/core'
+import { MdlModule  } from '@angular-mdl/core';
+
+//Daterangepicker
+import { DaterangepickerModule } from '../daterangepicker/daterangepicker.module';
+
+import { Daterangepicker } from 'ng2-daterangepicker';
+
+//angular2-moment
+import {MomentModule} from 'angular2-moment';
+
+
 
 
 
 
 @NgModule({
   imports: [
+    CommonModule,
     FormsModule,
     ComponentsRoutingModule,
     BsDropdownModule.forRoot(),
     ModalModule.forRoot(),
     TabsModule,
-    MdlModule
+    MdlModule,
+    DaterangepickerModule,
+    Daterangepicker,
+    MomentModule
     
   ],
   declarations: [
