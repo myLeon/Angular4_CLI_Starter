@@ -32,6 +32,7 @@
     "chart.js": "2.5.0",
     "core-js": "2.4.1",
     "jquery": "^3.2.1",
+    "md2": "0.0.17-2",
     "moment": "^2.18.1",
     "ng2-charts": "1.5.0",
     "ng2-daterangepicker": "^2.0.7",

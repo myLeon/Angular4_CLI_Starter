@@ -2,29 +2,8 @@
 
 
   <div class="row">
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-header">
-          <strong>angular MDL</strong>
-          <small>Form</small>
-        </div>
-        <div class="card-block">
 
-          <mdl-textfield type="text" label="最大10个字符文本框 Text..." maxlength="10"></mdl-textfield>
-          <mdl-textfield type="text" label="数字文本框 Number..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="请输入数字!" [(ngModel)]="text2"></mdl-textfield>
-          <mdl-textfield type="text" label="浮动标题 Text..." [(ngModel)]="text3" floating-label></mdl-textfield>
-          <mdl-textfield type="text" label="浮动标题 Number..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not a number!" [(ngModel)]="text4"
-            floating-label></mdl-textfield>
-          <mdl-textfield label="多行文本框..." [(ngModel)]="text5" rows="3" maxrows="3" floating-label></mdl-textfield>
-          <div>
-            <mdl-textfield type="text" [(ngModel)]="text6" icon="search"></mdl-textfield>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6">
+        <div class="col-sm-6">
       <div class="card">
         <div class="card-header">
           <strong>Bootstrap Daterangepicker</strong>
@@ -50,7 +29,7 @@
                     {{ dateInput.start | date:'M/dd/y' }} - {{ dateInput.end| date:'M/dd/y' }}
                 </span>
                 <span class="input-group-btn">
-                    <a type="button" class="btn btn-default"><i class="glyphicon glyphicon-calendar"></i></a>
+                    <a type="button" class="btn btn-default"><i class="fa fa-calendar"></i></a>
                 </span>
             </div>
 
@@ -67,6 +46,30 @@
          </div>
       </div>
     </div>
+    
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-header">
+          <strong>angular MDL</strong>
+          <small>Form</small>
+        </div>
+        <div class="card-block">
+
+          <mdl-textfield type="text" label="最大10个字符文本框 Text..." maxlength="10"></mdl-textfield>
+          <mdl-textfield type="text" label="数字文本框 Number..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="请输入数字!" [(ngModel)]="text2"></mdl-textfield>
+          <mdl-textfield type="text" label="浮动标题 Text..." [(ngModel)]="text3" floating-label></mdl-textfield>
+          <mdl-textfield type="text" label="浮动标题 Number..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not a number!" [(ngModel)]="text4"
+            floating-label></mdl-textfield>
+          <mdl-textfield label="多行文本框..." [(ngModel)]="text5" rows="3" maxrows="3" floating-label></mdl-textfield>
+          <div>
+            <mdl-textfield type="text" [(ngModel)]="text6" icon="search"></mdl-textfield>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
 
   </div>
 

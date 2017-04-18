@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { DaterangepickerConfig } from '../daterangepicker/config.service';
+import { DaterangepickerConfig } from 'ng2-daterangepicker';
 import * as moment from 'moment';
 
 @Component({
