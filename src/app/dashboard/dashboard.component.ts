@@ -1,18 +1,43 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+
+
+
+
 @Component({
   templateUrl: 'dashboard.component.html'
 })
 export class DashboardComponent implements OnInit {
 
-  // constructor( ) { }
+ 
 
-  public brandPrimary: string =  '#20a8d8';
-  public brandSuccess: string =  '#4dbd74';
-  public brandInfo: string =   '#63c2de';
-  public brandWarning: string =  '#f8cb00';
-  public brandDanger: string =   '#f86c6b';
+
+  constructor() {
+
+    //let clickStream = Observable.fromEvent(document.getElementById('test'), 'click');
+
+
+        
+// clickStream.debounceTime(250).subscribe(()=>{
+// console.log('doubleclick');
+
+// });
+    // clickStream
+    //   .buffer(clickStream.debounceTime(250))
+    //   .map(list => list.length)
+    //   .filter(x => x === 2)
+    //   .subscribe(() => {
+    //     console.log('doubleclick');
+    //   })
+
+  }
+
+  public brandPrimary: string = '#20a8d8';
+  public brandSuccess: string = '#4dbd74';
+  public brandInfo: string = '#63c2de';
+  public brandWarning: string = '#f8cb00';
+  public brandDanger: string = '#f86c6b';
 
   // dropdown buttons
   public status: { isopen: boolean } = { isopen: false };
@@ -261,7 +286,7 @@ export class DashboardComponent implements OnInit {
           drawOnChartArea: false,
         },
         ticks: {
-          callback: function(value: any) {
+          callback: function (value: any) {
             return value.charAt(0);
           }
         }
@@ -467,5 +492,6 @@ export class DashboardComponent implements OnInit {
       this.mainChartData2.push(this.random(80, 100));
       this.mainChartData3.push(65);
     }
+
   }
 }

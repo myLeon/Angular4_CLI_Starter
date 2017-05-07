@@ -9,6 +9,7 @@ import { SocialButtonsComponent } from './social-buttons.component';
 import { SwitchesComponent } from './switches.component';
 import { TablesComponent } from './tables.component';
 import { TabsComponent } from './tabs.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 const routes: Routes = [
   {
@@ -71,6 +72,13 @@ const routes: Routes = [
         component: TabsComponent,
         data: {
           title: 'Tabs'
+        }
+      },
+      {
+        path: 'rxjs',
+        component: RxjsComponent,
+        data: {
+          title: 'Rxjs'
         }
       }
     ]

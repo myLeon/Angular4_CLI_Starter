@@ -37,6 +37,7 @@ import { Daterangepicker } from 'ng2-daterangepicker';
 
 //angular2-moment
 import {MomentModule} from 'angular2-moment';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 
@@ -65,7 +66,8 @@ import {MomentModule} from 'angular2-moment';
     SocialButtonsComponent,
     SwitchesComponent,
     TablesComponent,
-    TabsComponent
+    TabsComponent,
+    RxjsComponent
   ]
 })
 export class ComponentsModule { }
